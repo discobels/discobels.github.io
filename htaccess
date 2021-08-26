@@ -1,2 +1,2 @@
-Redirect 301 "/" "/links/"
-Redirect 301 "/links" "/links/"
+Redirect 301 / /links/
+Redirect 301 /links /links/
