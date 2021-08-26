@@ -1,2 +1,2 @@
-DocumentIndex "/link/"
+Redirect 301 "/" "/links/"
 Redirect 301 "/links" "/links/"
