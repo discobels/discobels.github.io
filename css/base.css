@@ -1,0 +1,127 @@
+/* ==========================
+:: Template Name: Discobels Base
+:: Author: NaeemBolchhi
+:: License: GPL-3.0 License
+:: Landing Page: https://naeembolchhi.github.io/
+:: Telegram Profile: https://t.me/NaeemBolchhi
+:: Description: Made for the links page of Distorting Decibels.
+:: Version: v1.0
+:: Created: 25/08/2021
+========================== */
+
+/* --------------------------
+:: Fonts
+-------------------------- */
+@import url('https://fonts.googleapis.com/css?family=Ubuntu:400,700');
+
+/* --------------------------
+:: Animation
+-------------------------- */
+@keyframes coin-v
+{
+  0% {
+    animation-timing-function: cubic-bezier(0.5856,0.0703,0.4143,0.9297);
+    transform: rotateX(0deg);
+  }
+  100% {
+    transform: rotateX(1800deg);
+  }
+}
+
+/* --------------------------
+:: General
+-------------------------- */
+* {
+    scrollbar-width: thin !important;
+    scrollbar-color: #000000ff #96969600 !important;
+}
+::selection {
+  color: #161616;
+  background: #eeeeee;
+}
+html {
+    height: 100%;
+    font-family: "Ubuntu", sans-serif;
+    font-size: 1em;
+    line-height: 1;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+}
+body {
+    background: url(../img/bg-pattern.png) repeat, #161616;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+}
+a {
+    color: #ec9918;
+    text-decoration: none;
+    outline: none;
+}
+a:hover {color: #b97813;}
+.zero, a {
+    -webkit-tap-highlight-color: transparent;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+}
+.select {
+    -o-user-select: text;
+    -moz-user-select: text;
+    -webkit-user-select: text;
+    user-select: text;
+}
+.flex {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    align-items: center;
+}
+.flex-center {justify-content: center;}
+.flex-spaced {justify-content: space-between;}
+.flex-column {flex-direction: column;}
+.container {
+    background: #1c1c1cc1;
+    border: 2px solid #282828;
+    border-radius: 15px;
+    box-shadow: 0 0 20px #0008;
+    padding: 15px;
+    width: 85%;
+    height: 85%;
+    max-width: 450px;
+    margin: 5px;
+    line-height: 1;
+    color: #eeeeee;
+    text-align: center;
+}
+.gradient {
+    font-size: 1em;
+    background-color: #ec9918;
+    background: linear-gradient(to bottom right, #f2d130, #e55f00);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -moz-text-fill-color: transparent;
+    -webkit-text-fill-color: transparent;
+    display: inline-block;
+}
+.pointer {cursor: pointer;}
+.disabled {cursor: not-allowed; color: #666666!important;}
+.absolute {
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+}
+#bottom {z-index: 1;}
+#top {
+	z-index: 2;
+	background: #06060d;
+}
+.hidden {display: none;}
