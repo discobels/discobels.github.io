@@ -33,12 +33,12 @@ window.onload = async function() {
   let url = window.location.origin + '/usr/userconfig.json';
   let response = await fetch(url);
   let config = await response.json();
-  var allow = config[0].snow-globe;
-  var color = config[0].snow-color;
-  if (allow = "YES") {
+  var allowParticles = config[0].snowGlobe;
+  var colorParticles = config[0].snowColor;
+  if (allowParticles = "YES") {
   Particles.init({
     selector: '.background',
-    color: '#cccccc',
+    color: colorParticles,
 	sizeVariations: 5,
     maxParticles: 120,
     connectParticles: false,
