@@ -25,11 +25,17 @@ let x; let y; var z;
   setTimeout(function(){
     document.getElementById(i).style.display = "none";
   },1500);
-}
+};
 fadeOut('top');
 
 // Particle background settings.
-window.onload = function() {
+window.onload = async function() {
+  let url = window.location.origin + '/usr/userconfig.json';
+  let response = await fetch(url);
+  let config = await response.json();
+  var allow = config[0].snow-globe;
+  var color = config[0].snow-color;
+  if (allow = "YES") {
   Particles.init({
     selector: '.background',
     color: '#cccccc',
@@ -49,5 +55,7 @@ window.onload = function() {
         }
       }
    ]
-  });
+  });};
 };
+
+

@@ -85,8 +85,8 @@ a:hover {color: #b97813;}
 	position: relative;
     line-height: 1;
     color: #eeeeee;
-	width: 100%;
-	max-width: 1170px;
+	width: 90%;
+	max-width: 960px;
     margin: 0 auto;
     padding-bottom: 40px;
 }
@@ -124,31 +124,15 @@ a:hover {color: #b97813;}
 }
 [class*="col-"] {
   float: left;
-  padding: 35px 25px 35px 55px;
+  padding: 15px 15px 15px 45px;
   width: 100%;
 }
-[class*="cols-"] {
-  float: left;
-  padding: 2px;
-}
-.cols-1 {width: 8.33%;}
-.cols-2 {width: 16.66%;}
-.cols-3 {width: 25%;}
-.cols-4 {width: 33.33%;}
-.cols-5 {width: 41.66%;}
-.cols-6 {width: 50%;}
-.cols-7 {width: 58.33%;}
-.cols-8 {width: 66.66%;}
-.cols-9 {width: 75%;}
-.cols-10 {width: 83.33%;}
-.cols-11 {width: 91.66%;}
-.cols-12 {width: 100%;}
 
 /* --------------------------
 :: Block Design
 -------------------------- */
 .block {
-  height: 120px;
+  height: 100px;
   background: #1e1e1e;
   text-align: left;
   border-radius: 15px;
@@ -160,15 +144,15 @@ a:hover {color: #b97813;}
   transform: translateY(-3px);
 }
 .block-icon {
+  height: 60px;
+  width: 60px;
+  min-height: 60px;
+  min-width: 60px;
   transform: translateX(-30px);
   box-shadow: rgba(0, 0, 0, 0.2) 0px 3px 3px -2px, rgba(0, 0, 0, 0.14) 0px 3px 4px 0px, rgba(0, 0, 0, 0.12) 0px 1px 8px 0px;
   border-radius: 15px;
   background: #242424;
-  background: linear-gradient(145deg, #333333 0%, #1c1c1c 100%); 
-  height: 80px;
-  width: 80px;
-  min-height: 80px;
-  min-width: 80px;
+  background: linear-gradient(145deg, #333333 0%, #1c1c1c 100%);
 }
 .block-txt {
   transform: translateX(-10px);
@@ -176,6 +160,5 @@ a:hover {color: #b97813;}
   font-weight: 700;
   color: #F0F6FC;
 }
-h1 {font-size: 2vmin;}
 
 /* rgba(0, 0, 0, 0.2) 0px 2px 1px -1px, rgba(0, 0, 0, 0.14) 0px 1px 1px 0px, rgba(0, 0, 0, 0.12) 0px 1px 3px 0px */
