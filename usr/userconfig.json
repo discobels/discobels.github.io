@@ -6,8 +6,8 @@
     "tagline": "",
     "logo": "",
     "title": "Distorting Decibels",
-    "snowGlobe": "YES",
-    "snowColor": "#F0F6FCBB",
+    "snowGlobe": "NO",
+    "snowColor": "#F0F6FCAA",
     "audio": "NO",
     "audioURL": ""
   },
