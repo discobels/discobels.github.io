@@ -32,7 +32,7 @@ fadeOut('top');
 window.onload = function() {
   Particles.init({
     selector: '.background',
-    color: '#D7C5F9',
+    color: '#cccccc',
 	sizeVariations: 5,
     maxParticles: 120,
     connectParticles: false,
