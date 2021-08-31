@@ -35,7 +35,7 @@ window.onload = async function() {
   let config = await response.json();
   var allowParticles = config[0].snowGlobe;
   var colorParticles = config[0].snowColor;
-  if (allowParticles = "YES") {
+  if (allowParticles === "YES") {
   Particles.init({
     selector: '.background',
     color: colorParticles,
