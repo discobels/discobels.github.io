@@ -30,16 +30,16 @@ fadeOut('top');
 
 // Particle background settings.
 window.onload = async function() {
-  let url = window.location.origin + '/usr/userconfig.json';
-  let response = await fetch(url);
-  let config = await response.json();
-  var allowParticles = config[0].snowGlobe;
-  var colorParticles = config[0].snowColor;
-  if (allowParticles === "YES") {
+  //let url = window.location.origin + '/usr/userconfig.json';
+  //let response = await fetch(url);
+  //let config = await response.json();
+  //var allowParticles = config[0].snowGlobe;
+  //var colorParticles = config[0].snowColor;
+  //if (allowParticles === "YES") {
   Particles.init({
     selector: '.background',
-    color: colorParticles,
-	sizeVariations: 5,
+    color: #ffffff88,//colorParticles,
+    sizeVariations: 5,
     maxParticles: 120,
     connectParticles: false,
     responsive: [
@@ -55,7 +55,7 @@ window.onload = async function() {
         }
       }
    ]
-  });};
+  });//};
 };
 
 
