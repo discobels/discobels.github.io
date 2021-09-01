@@ -41,7 +41,7 @@ fadeOut('top');
 window.onload = function() {
   Particles.init({
     selector: '.background',
-    color: '#ffffff88',
+    color: window.snowColor,
     sizeVariations: 5,
     maxParticles: 120,
     connectParticles: false,
