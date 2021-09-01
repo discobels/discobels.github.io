@@ -19,10 +19,10 @@
 })();
 
 // Particle background settings.
-(function() {
+function snowGlobe(i) {
   Particles.init({
     selector: '.background',
-    color: window.snowColor,
+    color: i,
     sizeVariations: 5,
     maxParticles: 120,
     connectParticles: false,
@@ -40,7 +40,8 @@
       }
    ]
   });
-})();
+};
+snowGlobe('#ffffff88');
 
 // Hide loading screen after 1.3 seconds.
 function fadeOut(i) {
