@@ -20,9 +20,10 @@
 
 // Particle background settings.
 window.onload = function() {
+  var snowColor = window.snowColor;
   Particles.init({
     selector: '.background',
-    color: window.snowColor,
+    color: snowColor,
     sizeVariations: 5,
     maxParticles: 120,
     connectParticles: false,
