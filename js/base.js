@@ -24,7 +24,7 @@ let x; let y; var z;
     y = document.getElementById(i).style.opacity;
     z = y - 0.002;
     document.getElementById(i).style.opacity = z;
-  }
+  };
   setTimeout(function(){
     for (x = 0; x < 500; x++) {
       setTimeout(xyz, x);
@@ -36,8 +36,8 @@ let x; let y; var z;
 fadeOut('top');
 
 // Particle background settings.
+if (allowParticles === "YES") {
 window.onload = function() {
-  if (allowParticles === "YES") {
   Particles.init({
     selector: '.background',
     color: '#ffffff88',
@@ -57,5 +57,6 @@ window.onload = function() {
         }
       }
    ]
-  });};
+  });
 };
+}
