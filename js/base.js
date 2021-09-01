@@ -10,12 +10,36 @@
 ========================== */
 
 // Fetch JSON.
-(async function fetchJSON() {
+(async function() {
   let url = window.location.origin + '/usr/userconfig.json';
   let response = await fetch(url);
   let config = await response.json();
   window.snowGlobe = config[0].snowGlobe;
   window.snowColor = config[0].snowColor;
+})();
+
+// Particle background settings.
+(function() {
+  Particles.init({
+    selector: '.background',
+    color: window.snowColor,
+    sizeVariations: 5,
+    maxParticles: 120,
+    connectParticles: false,
+    responsive: [
+      {
+        breakpoint: 768,
+        options: {
+        maxParticles: 80
+        }
+      }, {
+        breakpoint: 375,
+        options: {
+        maxParticles: 50
+        }
+      }
+   ]
+  });
 })();
 
 // Hide loading screen after 1.3 seconds.
@@ -37,7 +61,7 @@ let x; let y; var z;
 };
 fadeOut('top');
 
-// Particle background settings.
+/* Particle background settings.
 window.onload = function() {
   Particles.init({
     selector: '.background',
@@ -59,4 +83,4 @@ window.onload = function() {
       }
    ]
   });
-};
+}; */
