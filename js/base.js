@@ -19,50 +19,6 @@
 })();
 
 // Particle background settings.
-function snowGlobe(i) {
-  Particles.init({
-    selector: '.background',
-    color: i,
-    sizeVariations: 5,
-    maxParticles: 120,
-    connectParticles: false,
-    responsive: [
-      {
-        breakpoint: 768,
-        options: {
-        maxParticles: 80
-        }
-      }, {
-        breakpoint: 375,
-        options: {
-        maxParticles: 50
-        }
-      }
-   ]
-  });
-};
-snowGlobe('#ffffff88');
-
-// Hide loading screen after 1.3 seconds.
-function fadeOut(i) {
-document.getElementById(i).style.opacity = 1;
-let x; let y; var z;
-  function xyz() {
-    y = document.getElementById(i).style.opacity;
-    z = y - 0.002;
-    document.getElementById(i).style.opacity = z;
-  };
-  setTimeout(function(){
-    for (x = 0; x < 500; x++) {
-      setTimeout(xyz, x);
-    }},1000);
-  setTimeout(function(){
-    document.getElementById(i).style.display = "none";
-  },1500);
-};
-fadeOut('top');
-
-/* Particle background settings.
 window.onload = function() {
   Particles.init({
     selector: '.background',
@@ -84,4 +40,23 @@ window.onload = function() {
       }
    ]
   });
-}; */
+};
+
+// Hide loading screen after 1.3 seconds.
+function fadeOut(i) {
+document.getElementById(i).style.opacity = 1;
+let x; let y; var z;
+  function xyz() {
+    y = document.getElementById(i).style.opacity;
+    z = y - 0.002;
+    document.getElementById(i).style.opacity = z;
+  };
+  setTimeout(function(){
+    for (x = 0; x < 500; x++) {
+      setTimeout(xyz, x);
+    }},1000);
+  setTimeout(function(){
+    document.getElementById(i).style.display = "none";
+  },1500);
+};
+fadeOut('top');
