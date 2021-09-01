@@ -24,7 +24,7 @@ let x; let y; var z;
     y = document.getElementById(i).style.opacity;
     z = y - 0.002;
     document.getElementById(i).style.opacity = z;
-  }
+  };
   setTimeout(function(){
     for (x = 0; x < 500; x++) {
       setTimeout(xyz, x);
