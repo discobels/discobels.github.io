@@ -9,6 +9,15 @@
 :: Created: 27/08/2021
 ========================== */
 
+// Fetch JSON.
+(async function fetchJSON() {
+  let url = window.location.origin + '/usr/userconfig.json';
+  let response = await fetch(url);
+  let config = await response.json();
+  window.snowGlobe = config[0].snowGlobe;
+  window.snowColor = config[0].snowColor;
+})();
+
 // Hide loading screen after 1.3 seconds.
 function fadeOut(i) {
 document.getElementById(i).style.opacity = 1;
@@ -51,12 +60,3 @@ window.onload = function() {
    ]
   });
 };
-
-// Fetch JSON.
-(async function() {
-  let url = window.location.origin + '/usr/userconfig.json';
-  let response = await fetch(url);
-  let config = await response.json();
-  var window.snowGlobe = config[0].snowGlobe;
-  var window.snowColor = config[0].snowColor;
-})();
