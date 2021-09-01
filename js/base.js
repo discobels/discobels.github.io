@@ -53,10 +53,10 @@ window.onload = function() {
 };
 
 // Fetch JSON.
-async function() {
+(async function() {
   let url = window.location.origin + '/usr/userconfig.json';
   let response = await fetch(url);
   let config = await response.json();
   var window.snowGlobe = config[0].snowGlobe;
   var window.snowColor = config[0].snowColor;
-};
+})();
