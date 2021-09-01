@@ -9,6 +9,13 @@
 :: Created: 27/08/2021
 ========================== */
 
+// Fetch JSON.
+let url = window.location.origin + '/usr/userconfig.json';
+let response = await fetch(url);
+let config = await response.json();
+var allowParticles = config[0].snowGlobe;
+var colorParticles = config[0].snowColor;
+
 // Hide loading screen after 1.3 seconds.
 function fadeOut(i) {
 document.getElementById(i).style.opacity = 1;
@@ -30,10 +37,11 @@ fadeOut('top');
 
 // Particle background settings.
 window.onload = function() {
+  if (allowParticles === "YES") {
   Particles.init({
     selector: '.background',
     color: '#ffffff88',
-	sizeVariations: 5,
+    sizeVariations: 5,
     maxParticles: 120,
     connectParticles: false,
     responsive: [
@@ -49,5 +57,5 @@ window.onload = function() {
         }
       }
    ]
-  });
+  });};
 };
