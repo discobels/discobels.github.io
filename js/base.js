@@ -47,8 +47,9 @@ window.onload = function() {
 };
 
 // Hide loading screen after 1.3 seconds.
-function fadeOut(i) {
-document.getElementById(i).style.opacity = 1;
+(function() {
+if (window.splashScreen === "YES") {
+document.getElementById(i).style.opacity = 'top';
 let x; let y; var z;
   function xyz() {
     y = document.getElementById(i).style.opacity;
@@ -62,8 +63,4 @@ let x; let y; var z;
   setTimeout(function(){
     document.getElementById(i).style.display = "none";
   },1500);
-};
-
-if (window.splashScreen === "YES") {
-  fadeOut('top');
-};
+};})();
