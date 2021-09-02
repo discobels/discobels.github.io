@@ -64,4 +64,4 @@ let x; let y; var z;
   },1500);
 }
 
-if (window.splashScreen === "YES") {fadeOut('top');}
+fadeOut('top');
