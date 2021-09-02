@@ -19,8 +19,9 @@
 })();
 
 // Particle background settings.
-window.onload = if (window.snowGlobe === "YES") {function() {
-  var snowColor = window.snowColor;
+window.onload = function() {
+  if (window.snowGlobe === "YES") {
+	var snowColor = window.snowColor;
   Particles.init({
     selector: '.background',
     color: snowColor,
