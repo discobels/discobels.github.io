@@ -19,7 +19,10 @@
 
 // Particle background settings.
 window.onload = function() {
-  var snowColor = window.config[0].snowColor;
+  let url = window.location.origin + '/usr/userconfig.json';
+  let response = await fetch(url);
+  let userconfig = await response.json();
+  var snowColor = userconfig[0].snowColor;
   Particles.init({
     selector: '.background',
     color: snowColor,
