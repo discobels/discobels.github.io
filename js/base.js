@@ -21,28 +21,29 @@
 // Particle background settings.
 window.onload = function() {
   if (window.snowGlobe === "YES") {
-	var snowColor = window.snowColor;
-  Particles.init({
-    selector: '.background',
-    color: snowColor,
-    sizeVariations: 5,
-    maxParticles: 120,
-    connectParticles: false,
-    responsive: [
-      {
-        breakpoint: 768,
-        options: {
-        maxParticles: 80
+    var snowColor = window.snowColor;
+    Particles.init({
+      selector: '.background',
+      color: snowColor,
+      sizeVariations: 5,
+      maxParticles: 120,
+      connectParticles: false,
+      responsive: [
+        {
+          breakpoint: 768,
+          options: {
+          maxParticles: 80
+          }
+        }, {
+          breakpoint: 375,
+          options: {
+          maxParticles: 50
+          }
         }
-      }, {
-        breakpoint: 375,
-        options: {
-        maxParticles: 50
-        }
-      }
-   ]
-  });
-};};
+     ]
+    });
+  };
+};
 
 // Hide loading screen after 1.3 seconds.
 function fadeOut(i) {
