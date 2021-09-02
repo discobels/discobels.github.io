@@ -19,6 +19,7 @@
 })();
 
 // Particle background settings.
+if (window.snowGlobe === "YES") {
 window.onload = function() {
   var snowColor = window.snowColor;
   Particles.init({
@@ -41,7 +42,7 @@ window.onload = function() {
       }
    ]
   });
-};
+};};
 
 // Hide loading screen after 1.3 seconds.
 function fadeOut(i) {
