@@ -9,50 +9,51 @@
     "snowGlobe": "YES",
     "snowColor": "#F0F6FCAA",
     "audio": "NO",
-    "audioURL": ""
+    "audioURL": "",
+	"splashScreen": "YES"
   },
   {
     "blocks": [
       {
         "name": "Facebook Group",
-        "desc": "The place where it all began.",
         "link": "https://www.facebook.com/groups/discobels/",
-		"icon": "",
+		"newTab": "YES",
+		"png": "",
 		"id": ""
       },
       {
         "name": "Facebook Page",
-        "desc": "Announcements and updates about the latest campaigns.",
         "link": "https://www.facebook.com/Distorting.Decibels/",
-		"icon": "",
+		"newTab": "YES",
+		"png": "",
 		"id": ""
       },
       {
         "name": "Instagram Profile",
-        "desc": "Stay updated with our campaigns.",
         "link": "https://www.instagram.com/distorting.decibels/",
-		"icon": "",
+		"newTab": "YES",
+		"png": "",
 		"id": ""
       },
       {
         "name": "Twitter Profile",
-        "desc": "Sharing the music we love.",
         "link": "https://twitter.com/DistortingD",
-		"icon": "",
+		"newTab": "YES",
+		"png": "",
 		"id": ""
       },
 	  {
         "name": "YouTube Channel",
-        "desc": "The budding platform promoting music.",
         "link": "https://www.youtube.com/channel/UCq9m8BB7232mODFet-RYBMg",
-		"icon": "",
+		"newTab": "YES",
+		"png": "",
 		"id": ""
       },
 	  {
         "name": "Spotify Profile",
-        "desc": "Listen to the songs we love.",
         "link": "https://open.spotify.com/user/j106iy85afhlykc8hypra33po",
-		"icon": "",
+		"newTab": "YES",
+		"png": "",
 		"id": ""
       }
     ]

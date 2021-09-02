@@ -16,6 +16,7 @@
   let config = await response.json();
   window.snowGlobe = config[0].snowGlobe;
   window.snowColor = config[0].snowColor;
+  window.splashScreen = config[0].splashScreen;
 })();
 
 // Particle background settings.
@@ -62,4 +63,4 @@ let x; let y; var z;
     document.getElementById(i).style.display = "none";
   },1500);
 };
-fadeOut('top');
+if(window.splashScreen === "YES") {fadeOut('top');};
