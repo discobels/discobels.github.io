@@ -63,4 +63,5 @@ let x; let y; var z;
     document.getElementById(i).style.display = "none";
   },1500);
 }
-fadeOut('top');
+
+if (window.splashScreen === "YES") {fadeOut('top');}
