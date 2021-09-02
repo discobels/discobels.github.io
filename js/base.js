@@ -19,29 +19,27 @@
 
 // Particle background settings.
 window.onload = function() {
-  if (window.config[0].snowGlobe === "YES") {
-    var snowColor = window.config[0].snowColor;
-    Particles.init({
-      selector: '.background',
-      color: snowColor,
-      sizeVariations: 5,
-      maxParticles: 120,
-      connectParticles: false,
-      responsive: [
-        {
-          breakpoint: 768,
-          options: {
-          maxParticles: 80
-          }
-        }, {
-          breakpoint: 375,
-          options: {
-          maxParticles: 50
-          }
+  var snowColor = window.config[0].snowColor;
+  Particles.init({
+    selector: '.background',
+    color: snowColor,
+    sizeVariations: 5,
+    maxParticles: 120,
+    connectParticles: false,
+    responsive: [
+      {
+        breakpoint: 768,
+        options: {
+        maxParticles: 80
         }
-     ]
-    });
-  }
+      }, {
+        breakpoint: 375,
+        options: {
+        maxParticles: 50
+        }
+      }
+   ]
+  });
 }
 
 // Hide loading screen after 1.3 seconds.
