@@ -18,7 +18,7 @@
 })();
 
 // Particle background settings.
-window.onload = function() {
+window.onload = async function() {
   let url = window.location.origin + '/usr/userconfig.json';
   let response = await fetch(url);
   let userconfig = await response.json();
