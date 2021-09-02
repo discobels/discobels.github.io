@@ -4,9 +4,6 @@
 :: License: GPL-3.0 License
 :: Landing Page: https://naeembolchhi.github.io/
 :: Telegram Profile: https://t.me/NaeemBolchhi
-:: Description: Made for the links page of Distorting Decibels.
-:: Version: v1.0
-:: Created: 25/08/2021
 ========================== */
 
 /* --------------------------
@@ -130,6 +127,7 @@ section {
   height: 120px;
   width: auto;
   border-radius: 50%;
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 2px 1px -1px, rgba(0, 0, 0, 0.14) 0px 1px 1px 0px, rgba(0, 0, 0, 0.12) 0px 1px 3px 0px;
 }
 #bottom {
   z-index: 1;
@@ -164,8 +162,7 @@ section {
   background: #1e1e1e;
   text-align: left;
   border-radius: 15px;
-  box-shadow: rgba(0, 0, 0, 0.2) 0px 3px 1px -2px,
-    rgba(0, 0, 0, 0.14) 0px 2px 2px 0px, rgba(0, 0, 0, 0.12) 0px 1px 5px 0px;
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 3px 1px -2px, rgba(0, 0, 0, 0.14) 0px 2px 2px 0px, rgba(0, 0, 0, 0.12) 0px 1px 5px 0px;
   transition: transform 0.2s;
 }
 .block:hover {
@@ -178,18 +175,18 @@ section {
   min-height: 60px;
   min-width: 60px;
   transform: translateX(-50%);
-  box-shadow: rgba(0, 0, 0, 0.2) 0px 3px 3px -2px,
-    rgba(0, 0, 0, 0.14) 0px 3px 4px 0px, rgba(0, 0, 0, 0.12) 0px 1px 8px 0px;
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 3px 3px -2px, rgba(0, 0, 0, 0.14) 0px 3px 4px 0px, rgba(0, 0, 0, 0.12) 0px 1px 8px 0px;
   border-radius: 15%;
   background: #242424;
   background: linear-gradient(145deg, #333333 0%, #1c1c1c 100%);
 }
- .block:hover > .block-icon {
-  background: #fff;
+.block:hover > .block-icon {
+  background: #333333;
+  background: linear-gradient(145deg, #3c3c3c 0%, #222222 100%);
 }
 .block-icon > img {
-  height: 48px;
-  width: 48px;
+  width: 50px;
+  height: auto;
   border-radius: 15%;
 }
 .block-txt {
@@ -197,10 +194,3 @@ section {
   word-break: break-word;
   font-weight: 700;
 }
-section > a {
-  animation: fadeInUp;
-  animation-duration: 1s;
-  animation-delay: 1s;
-}
-
-/* rgba(0, 0, 0, 0.2) 0px 2px 1px -1px, rgba(0, 0, 0, 0.14) 0px 1px 1px 0px, rgba(0, 0, 0, 0.12) 0px 1px 3px 0px */

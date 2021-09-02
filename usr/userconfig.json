@@ -1,60 +1,57 @@
 [
   {
-    "blocks": "6",
-    "buttons": "0",
     "brand": "Distorting Decibels",
-    "tagline": "",
+    "tagline": "Let Out the Melodies!",
     "logo": "",
-    "title": "Distorting Decibels",
+    "logoAlt": "Distorting Decibels Logo",
     "snowGlobe": "YES",
     "snowColor": "#F0F6FCAA",
     "audio": "NO",
-    "audioURL": "",
-	"splashScreen": "YES"
+    "audioURL": ""
   },
   {
     "blocks": [
       {
-        "name": "Facebook Group",
-        "link": "https://www.facebook.com/groups/discobels/",
-		"newTab": "YES",
-		"png": "",
-		"id": ""
-      },
-      {
-        "name": "Facebook Page",
+        "name": "Like us on Facebook",
         "link": "https://www.facebook.com/Distorting.Decibels/",
 		"newTab": "YES",
-		"png": "",
-		"id": ""
+		"png": "img/social-facebook.png",
+		"id": "facebook"
       },
       {
-        "name": "Instagram Profile",
+        "name": "Join our Facebook Group",
+        "link": "https://www.facebook.com/groups/discobels/",
+		"newTab": "YES",
+		"png": "img/social-fbgroup.png",
+		"id": "facebook-group"
+      },
+      {
+        "name": "Follow us on Instagram",
         "link": "https://www.instagram.com/distorting.decibels/",
 		"newTab": "YES",
-		"png": "",
-		"id": ""
+		"png": "img/social-instagram.png",
+		"id": "instagram"
       },
       {
-        "name": "Twitter Profile",
+        "name": "Follow us on Twitter",
         "link": "https://twitter.com/DistortingD",
 		"newTab": "YES",
-		"png": "",
-		"id": ""
+		"png": "img/social-twitter.png",
+		"id": "twitter"
       },
 	  {
-        "name": "YouTube Channel",
+        "name": "Subscribe to our YouTube Channel",
         "link": "https://www.youtube.com/channel/UCq9m8BB7232mODFet-RYBMg",
 		"newTab": "YES",
-		"png": "",
-		"id": ""
+		"png": "img/social-youtube.png",
+		"id": "youtube"
       },
 	  {
-        "name": "Spotify Profile",
+        "name": "Hear us jamming on Spotify",
         "link": "https://open.spotify.com/user/j106iy85afhlykc8hypra33po",
 		"newTab": "YES",
-		"png": "",
-		"id": ""
+		"png": "img/social-spotify.png",
+		"id": "spotify"
       }
     ]
   },

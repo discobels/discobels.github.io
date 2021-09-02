@@ -1,1 +1,19 @@
-asas
+/* ==========================
+:: Template Name: Discobels Userstyles
+:: Author: NaeemBolchhi
+:: License: GPL-3.0 License
+:: Landing Page: https://naeembolchhi.github.io/
+:: Telegram Profile: https://t.me/NaeemBolchhi
+========================== */
+
+/* Default animation for blocks. https://animate.style/ */
+.animateBlocks {
+  animation: fadeInUp;
+  animation-duration: 1s;
+  animation-delay: 1s;
+}
+
+/* Social media gradients. */
+#facebook .block-icon {
+  background: red;
+}

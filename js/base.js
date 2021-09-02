@@ -13,16 +13,14 @@
 (async function() {
   let url = window.location.origin + '/usr/userconfig.json';
   let response = await fetch(url);
-  let config = await response.json();
-  window.snowGlobe = config[0].snowGlobe;
-  window.snowColor = config[0].snowColor;
-  window.splashScreen = config[0].splashScreen;
+  let userconfig = await response.json();
+  window.config = userconfig;
 })();
 
 // Particle background settings.
 window.onload = function() {
-  if (window.snowGlobe === "YES") {
-    var snowColor = window.snowColor;
+  if (window.config[0].snowGlobe === "YES") {
+    var snowColor = window.config[0].snowColor;
     Particles.init({
       selector: '.background',
       color: snowColor,
@@ -63,5 +61,6 @@ let x; let y; var z;
     document.getElementById(i).style.display = "none";
   },1500);
 }
-
 fadeOut('top');
+
+// 
