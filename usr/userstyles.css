@@ -77,12 +77,12 @@
     bottom: 40px;
     left: 20px;
     position: fixed;
-    max-width: 300px;
+    width: 18vw;
   }
   .object-right {
     top: 40px;
     right: 20px;
     position: fixed;
-    max-width: 200px;
+    width: 12vw;
   }
 }
