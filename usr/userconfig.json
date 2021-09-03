@@ -10,7 +10,7 @@
   {
     "blocks": [
       {
-        "name": "Like us on Facebook",
+        "name": "Follow us on Facebook",
         "link": "https://www.facebook.com/Distorting.Decibels/",
         "newTab": "YES",
         "png": "img/social-facebook.png",
@@ -45,7 +45,7 @@
         "id": "youtube"
       },
       {
-        "name": "Hear us jamming on Spotify",
+        "name": "Follow us on Spotify",
         "link": "https://open.spotify.com/user/j106iy85afhlykc8hypra33po",
         "newTab": "YES",
         "png": "img/social-spotify.png",
