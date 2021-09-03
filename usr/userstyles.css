@@ -65,10 +65,13 @@
 }
 
 /* Custom background objects. */
+.objects {
+  z-index: 1;
+  background: url(../img/bg-pattern.jpg) repeat;
+}
 @media only screen and (min-width: 1170px) {
-  .objects {
+  .object-left, .object-right {
     display: block !important;
-    z-index: 1;
   }
   .object-left {
     bottom: 40px;
