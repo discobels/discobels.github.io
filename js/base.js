@@ -6,16 +6,6 @@
 :: Telegram Profile: https://t.me/NaeemBolchhi
 ========================== */
 
-// Determine loop numbers.
-(async function() {
-  let url = window.location.origin + '/usr/userconfig.json';
-  let response = await fetch(url);
-  let userconfig = await response.json();
-  var canvas = document.getElementsByTagName('canvas')[0];
-  canvas.setAttribute('blocks',userconfig[1].blocks.length);
-  canvas.setAttribute('buttons',userconfig[2].buttons.length);
-})();
-
 // Particle background settings.
 window.onload = async function() {
   let url = window.location.origin + '/usr/userconfig.json';
