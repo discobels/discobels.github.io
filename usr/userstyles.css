@@ -32,28 +32,12 @@
   background: linear-gradient(145deg, #2d88ff 0%, #2774d9 100%);
 }
 #instagram > .block > .block-icon {
-  background: #2d88ff;
-  background: linear-gradient(
-    145deg,
-    #405de6,
-    #5851db,
-    #833ab4,
-    #c13584,
-    #e1306c,
-    #fd1d1d
-  );
+  background: #dd326e;
+  background: linear-gradient(145deg, #eb3675 0%, #9e244f 100%);
 }
 #instagram > .block:hover > .block-icon {
-  background: #297be5;
-  background: linear-gradient(
-    145deg,
-    #364dbf,
-    #4943b5,
-    #682e8f,
-    #c13584,
-    #e1306c,
-    #fd1d1d
-  );
+  background: #c42d62;
+  background: linear-gradient(145deg, #eb3675 0%, #b82a5c 100%);
 }
 #twitter > .block > .block-icon {
   background: #1d9bf0;
@@ -73,11 +57,11 @@
 }
 #spotify > .block > .block-icon {
   background: #1ed760;
-  background: linear-gradient(145deg, #23fc6f 0%, #17a348 100%);
+  background: linear-gradient(145deg, #1ed760 0%, #159642 100%);
 }
 #spotify > .block:hover > .block-icon {
   background: #1abd53;
-  background: linear-gradient(145deg, #23fc6f 0%, #1cc959 100%);
+  background: linear-gradient(145deg, #1ed760 0%, #1abd53 100%);
 }
 
 /* Custom background objects. */
