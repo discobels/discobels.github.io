@@ -117,9 +117,17 @@ header,
 footer {
   flex-shrink: 0;
 }
-header {padding: 35px 25px 0px 25px;}
-footer {padding: 15px 25px 25px 25px;}
-header > img, header > h2, header > h3 {margin: 0 0 15px 0;}
+header {
+  padding: 35px 25px 0px 25px;
+}
+footer {
+  padding: 15px 25px 25px 25px;
+}
+header > img,
+header > h2,
+header > h3 {
+  margin: 0 0 15px 0;
+}
 section {
   flex: 1 0 auto;
   padding: 15px 25px;
@@ -128,7 +136,8 @@ section {
   height: 120px;
   width: auto;
   border-radius: 50%;
-  box-shadow: rgba(0, 0, 0, 0.2) 0px 2px 1px -1px, rgba(0, 0, 0, 0.14) 0px 1px 1px 0px, rgba(0, 0, 0, 0.12) 0px 1px 3px 0px;
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 2px 1px -1px,
+    rgba(0, 0, 0, 0.14) 0px 1px 1px 0px, rgba(0, 0, 0, 0.12) 0px 1px 3px 0px;
 }
 #bottom {
   z-index: 2;
@@ -164,7 +173,8 @@ section {
   background: #1e1e1e;
   text-align: left;
   border-radius: 15px;
-  box-shadow: rgba(0, 0, 0, 0.2) 0px 3px 1px -2px, rgba(0, 0, 0, 0.14) 0px 2px 2px 0px, rgba(0, 0, 0, 0.12) 0px 1px 5px 0px;
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 3px 1px -2px,
+    rgba(0, 0, 0, 0.14) 0px 2px 2px 0px, rgba(0, 0, 0, 0.12) 0px 1px 5px 0px;
   transition: transform 0.2s;
 }
 .block:hover {
@@ -177,7 +187,8 @@ section {
   min-height: 60px;
   min-width: 60px;
   transform: translateX(-50%);
-  box-shadow: rgba(0, 0, 0, 0.2) 0px 3px 3px -2px, rgba(0, 0, 0, 0.14) 0px 3px 4px 0px, rgba(0, 0, 0, 0.12) 0px 1px 8px 0px;
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 3px 3px -2px,
+    rgba(0, 0, 0, 0.14) 0px 3px 4px 0px, rgba(0, 0, 0, 0.12) 0px 1px 8px 0px;
   border-radius: 15%;
   background: #242424;
   background: linear-gradient(145deg, #333333 0%, #1c1c1c 100%);

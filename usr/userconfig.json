@@ -5,7 +5,7 @@
     "logo": "img/logo-header.png",
     "logoAlt": "Distorting Decibels Logo",
     "snowGlobe": "YES",
-    "snowColor": "#F0F6FC88"
+    "snowColor": "#383838"
   },
   {
     "blocks": [
@@ -21,7 +21,7 @@
         "link": "https://www.facebook.com/groups/discobels/",
         "newTab": "YES",
         "png": "img/social-fbgroup.png",
-        "id": "facebook-group"
+        "id": "fbgroup"
       },
       {
         "name": "Follow us on Instagram",

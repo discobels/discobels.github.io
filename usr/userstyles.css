@@ -8,11 +8,94 @@
 
 /* Social media gradients. */
 #facebook > .block > .block-icon {
-  background: #1877f2;
-  background: linear-gradient(145deg, #1a7dff 0%, #1151a6 100%);
+  background: #1877f2; /* Base */
+  background: linear-gradient(
+    145deg,
+    #1a7dff 0%,
+    #1151a6 100%
+  ); /* Dark plus 5 to Dark minus 30 */
 }
 #facebook > .block:hover > .block-icon {
-  background: #333333;
-  background: linear-gradient(145deg, #1a7dff 0%, #1464cc 100%);
+  background: #166ad9; /* Dark minus 10 */
+  background: linear-gradient(
+    145deg,
+    #1a7dff 0%,
+    #1464cc 100%
+  ); /* Dark plus 5 to Dark minus 15 */
 }
+#fbgroup > .block > .block-icon {
+  background: #2d88ff;
+  background: linear-gradient(145deg, #2d88ff 0%, #2060b3 100%);
+}
+#fbgroup > .block:hover > .block-icon {
+  background: #297be5;
+  background: linear-gradient(145deg, #2d88ff 0%, #2774d9 100%);
+}
+#instagram > .block > .block-icon {
+  background: #2d88ff;
+  background: linear-gradient(
+    145deg,
+    #405de6,
+    #5851db,
+    #833ab4,
+    #c13584,
+    #e1306c,
+    #fd1d1d
+  );
+}
+#instagram > .block:hover > .block-icon {
+  background: #297be5;
+  background: linear-gradient(
+    145deg,
+    #364dbf,
+    #4943b5,
+    #682e8f,
+    #c13584,
+    #e1306c,
+    #fd1d1d
+  );
+}
+#twitter > .block > .block-icon {
+  background: #1d9bf0;
+  background: linear-gradient(145deg, #1ea4fc 0%, #177abd 100%);
+}
+#twitter > .block:hover > .block-icon {
+  background: #1a8bd6;
+  background: linear-gradient(145deg, #1ea4fc 0%, #1b93e3 100%);
+}
+#youtube > .block > .block-icon {
+  background: #ff0000;
+  background: linear-gradient(145deg, #ff0000 0%, #b20000 100%);
+}
+#youtube > .block:hover > .block-icon {
+  background: #e50000;
+  background: linear-gradient(145deg, #ff0000 0%, #d90000 100%);
+}
+#spotify > .block > .block-icon {
+  background: #1ed760;
+  background: linear-gradient(145deg, #23fc6f 0%, #17a348 100%);
+}
+#spotify > .block:hover > .block-icon {
+  background: #1abd53;
+  background: linear-gradient(145deg, #23fc6f 0%, #1cc959 100%);
+}
+
 /* Custom background objects. */
+@media only screen and (min-width: 1170px) {
+  .objects {
+    display: block !important;
+    z-index: 1;
+  }
+  .object-left {
+    bottom: 40px;
+    left: 20px;
+    position: fixed;
+    max-width: 300px;
+  }
+  .object-right {
+    top: 40px;
+    right: 20px;
+    position: fixed;
+    max-width: 200px;
+  }
+}
