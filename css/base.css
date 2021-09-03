@@ -33,7 +33,6 @@
   margin: 0;
   padding: 0;
   border: none;
-  outline: none;
   box-sizing: border-box;
 }
 ::selection {
@@ -55,8 +54,14 @@ body {
 }
 a {
   color: #fcfcfc;
-  text-decoration: none;
   cursor: default;
+  text-decoration: none;
+  outline: none;
+  -webkit-tap-highlight-color: transparent;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
 }
 a:hover {
   color: #cccccc;
