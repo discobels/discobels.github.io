@@ -9,40 +9,35 @@
 :: Created: 27/08/2021
 ========================== */
 
-// Fetch JSON.
-(async function() {
-  let url = window.location.origin + '/usr/userconfig.json';
-  let response = await fetch(url);
-  let userconfig = await response.json();
-  window.config = userconfig;
-})();
-
 // Particle background settings.
 window.onload = async function() {
   let url = window.location.origin + '/usr/userconfig.json';
   let response = await fetch(url);
   let userconfig = await response.json();
+  var snowGlobe = userconfig[0].snowGlobe;
   var snowColor = userconfig[0].snowColor;
-  Particles.init({
-    selector: '.background',
-    color: snowColor,
-    sizeVariations: 5,
-    maxParticles: 120,
-    connectParticles: false,
-    responsive: [
-      {
-        breakpoint: 768,
-        options: {
-        maxParticles: 80
+  if (snowGlobe === "YES") {
+    Particles.init({
+      selector: '.background',
+      color: snowColor,
+      sizeVariations: 5,
+      maxParticles: 120,
+      connectParticles: false,
+      responsive: [
+        {
+          breakpoint: 768,
+          options: {
+          maxParticles: 80
+          }
+        }, {
+          breakpoint: 375,
+          options: {
+          maxParticles: 50
+          }
         }
-      }, {
-        breakpoint: 375,
-        options: {
-        maxParticles: 50
-        }
-      }
-   ]
-  });
+     ]
+    });
+  }
 }
 
 // Hide loading screen after 1.3 seconds.
