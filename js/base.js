@@ -4,10 +4,17 @@
 :: License: GPL-3.0 License
 :: Landing Page: https://naeembolchhi.github.io/
 :: Telegram Profile: https://t.me/NaeemBolchhi
-:: Description: Made for the links page of Distorting Decibels.
-:: Version: v1.0
-:: Created: 27/08/2021
 ========================== */
+
+// Determine loop numbers.
+(async function() {
+  let url = window.location.origin + '/usr/userconfig.json';
+  let response = await fetch(url);
+  let userconfig = await response.json();
+  var canvas = document.getElementsByTagName('canvas')[0];
+  canvas.setAttribute('blocks',userconfig[1].blocks.length);
+  canvas.setAttribute('buttons',userconfig[2].buttons.length);
+})();
 
 // Particle background settings.
 window.onload = async function() {
@@ -59,4 +66,35 @@ let x; let y; var z;
 }
 fadeOut('top');
 
-// 
+// Add header.
+(async function() {
+  let url = window.location.origin + '/usr/userconfig.json';
+  let response = await fetch(url);
+  let userconfig = await response.json();
+  var header = document.getElementsByTagName('header')[0];
+  header.innerHTML = '<img class="brand-logo" src="' + userconfig[0].logo + '" alt="' + userconfig[0].logoAlt + '" /><h2>' + userconfig[0].brand + '</h2><h3>' + userconfig[0].tagline + '</h3>';
+})();
+
+// Add blocks.
+async function addBlocks(n) {
+  let url = window.location.origin + '/usr/userconfig.json';
+  let response = await fetch(url);
+  let userconfig = await response.json();
+  var blockSec, blockObj;
+  blockSec = document.getElementById('blocks');
+  blockObj = document.createElement('a');
+  blockObj.id = userconfig[1].blocks[n].id;
+  blockObj.className = 'col-m6';
+  blockObj.href = userconfig[1].blocks[n].link;
+  blockObj.innerHTML = '<div class="block flex"><h1 class="block-icon flex flex-center"><img src="' + userconfig[1].blocks[n].png + '" alt="' + userconfig[1].blocks[n].name + '" /></h1><h2 class="block-txt">' + userconfig[1].blocks[n].name + '</h2></div>';
+  blockSec.appendChild(blockObj);
+}
+(async function() {
+  let url = window.location.origin + '/usr/userconfig.json';
+  let response = await fetch(url);
+  let userconfig = await response.json();
+  var blockLength = userconfig[1].blocks.length;
+  for (i = 0; i < blockLength; i++) {
+    addBlocks(i);
+  }
+})();

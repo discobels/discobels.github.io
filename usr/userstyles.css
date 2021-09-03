@@ -6,14 +6,9 @@
 :: Telegram Profile: https://t.me/NaeemBolchhi
 ========================== */
 
-/* Default animation for blocks. https://animate.style/ */
-.animateBlocks {
-  animation: fadeInUp;
-  animation-duration: 1s;
-  animation-delay: 1s;
-}
-
 /* Social media gradients. */
 #facebook .block-icon {
   background: red;
 }
+
+/* Custom background objects. */
