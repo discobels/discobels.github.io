@@ -69,6 +69,9 @@
   z-index: 1;
   background: url(../img/bg-pattern.jpg) repeat;
 }
+.fourth-wall {
+  z-index: 2;
+}
 @media only screen and (min-width: 1170px) {
   .object-left, .object-right {
     display: block !important;
