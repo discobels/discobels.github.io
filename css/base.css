@@ -123,7 +123,7 @@ header {
 footer {
   padding: 15px 25px 25px 25px;
 }
-footer > a {
+footer a {
   cursor: pointer;
 }
 header > img,
