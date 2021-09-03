@@ -56,6 +56,7 @@ body {
 a {
   color: #fcfcfc;
   text-decoration: none;
+  cursor: default;
 }
 a:hover {
   color: #cccccc;
@@ -158,6 +159,7 @@ section {
 :: Block Design
 -------------------------- */
 .block {
+  cursor: pointer;
   height: 100px;
   background: #1e1e1e;
   text-align: left;
@@ -190,7 +192,11 @@ section {
   border-radius: 15%;
 }
 .block-txt {
+  color: #fcfcfc;
   transform: translateX(-10px);
   word-break: break-word;
   font-weight: 700;
+}
+.block:hover > .block-txt {
+  color: #cccccc;
 }

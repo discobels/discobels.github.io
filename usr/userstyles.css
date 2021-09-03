@@ -7,8 +7,12 @@
 ========================== */
 
 /* Social media gradients. */
-#facebook .block-icon {
-  background: red;
+#facebook > .block > .block-icon {
+  background: #1877f2;
+  background: linear-gradient(145deg, #1a7dff 0%, #1151a6 100%);
 }
-
+#facebook > .block:hover > .block-icon {
+  background: #333333;
+  background: linear-gradient(145deg, #1a7dff 0%, #1464cc 100%);
+}
 /* Custom background objects. */
