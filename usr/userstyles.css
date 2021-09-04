@@ -6,6 +6,11 @@
 :: Telegram Profile: https://t.me/NaeemBolchhi
 ========================== */
 
+/* Font weights. */
+h2[class*="block-"] {
+  font-weight: 500;
+}
+
 /* Social media gradients. */
 #facebook > .block > .block-icon {
   background: #1877f2; /* Base */
