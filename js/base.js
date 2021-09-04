@@ -49,7 +49,8 @@ let x; let y; var z;
   setTimeout(function(){
     for (x = 0; x < 500; x++) {
       setTimeout(xyz, x);
-    }},1000);
+    }
+  },1000);
   setTimeout(function(){
     document.getElementById(i).style.display = "none";
   },1500);
@@ -86,6 +87,6 @@ async function addBlocks(n) {
   let userconfig = await response.json();
   var blockLength = userconfig[1].blocks.length;
   for (i = 0; i < blockLength; i++) {
-    addBlocks(i);
+    setTimeout(function(){addBlocks(i);}, i);
   }
 })();
