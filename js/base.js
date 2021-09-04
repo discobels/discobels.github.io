@@ -79,9 +79,10 @@ async function addBlocks(n) {
   blockObj.href = userconfig[1].blocks[n].link;
   if (userconfig[1].blocks[1].newTab === "YES") {blockObj.target = '_blank';}
   blockObj.innerHTML = '<div class="block flex"><h1 class="block-icon flex flex-center"><img src="' + userconfig[1].blocks[n].png + '" alt="' + userconfig[1].blocks[n].name + '" /></h1><h2 class="block-txt">' + userconfig[1].blocks[n].name + '</h2></div>';
+  var wait = i*10+1;
   setTimeout(function(){
     blockSec.appendChild(blockObj);
-  }, i);
+  }, wait);
 }
 (async function() {
   let url = window.location.origin + '/usr/userconfig.json';
