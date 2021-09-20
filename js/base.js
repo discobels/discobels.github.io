@@ -6,37 +6,6 @@
 :: Telegram Profile: https://t.me/NaeemBolchhi
 ========================== */
 
-// Particle background settings.
-window.onload = async function() {
-  let url = window.location.origin + '/usr/userconfig.json';
-  let response = await fetch(url);
-  let userconfig = await response.json();
-  var snowGlobe = userconfig[0].snowGlobe;
-  var snowColor = userconfig[0].snowColor;
-  if (snowGlobe === "YES") {
-    Particles.init({
-      selector: '.background',
-      color: snowColor,
-      sizeVariations: 5,
-      maxParticles: 120,
-      connectParticles: false,
-      responsive: [
-        {
-          breakpoint: 768,
-          options: {
-          maxParticles: 80
-          }
-        }, {
-          breakpoint: 375,
-          options: {
-          maxParticles: 50
-          }
-        }
-     ]
-    });
-  }
-}
-
 // Hide loading screen after 1.3 seconds.
 function fadeOut(i) {
 document.getElementById(i).style.opacity = 1;
@@ -59,18 +28,12 @@ fadeOut('top');
 
 // Add header.
 (async function() {
-  let url = window.location.origin + '/usr/userconfig.json';
-  let response = await fetch(url);
-  let userconfig = await response.json();
   var header = document.getElementsByTagName('header')[0];
   header.innerHTML = '<img class="brand-logo" src="' + userconfig[0].logo + '" alt="' + userconfig[0].logoAlt + '" /><h2>' + userconfig[0].brand + '</h2><h3>' + userconfig[0].tagline + '</h3>';
 })();
 
 // Add blocks.
 async function addBlocks(n) {
-  let url = window.location.origin + '/usr/userconfig.json';
-  let response = await fetch(url);
-  let userconfig = await response.json();
   var blockSec, blockObj;
   blockSec = document.getElementById('blocks');
   blockObj = document.createElement('a');
@@ -85,9 +48,6 @@ async function addBlocks(n) {
   }, wait);
 }
 (async function() {
-  let url = window.location.origin + '/usr/userconfig.json';
-  let response = await fetch(url);
-  let userconfig = await response.json();
   var blockLength = userconfig[1].blocks.length;
   for (i = 0; i < blockLength; i++) {
     addBlocks(i);

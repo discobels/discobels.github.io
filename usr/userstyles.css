@@ -85,12 +85,14 @@ h2[class*="block-"] {
     bottom: 40px;
     left: 20px;
     position: fixed;
-    width: 18vw;
+    width: 25vw;
+	transform: translateX(-60px) translateY(120px) rotate(45deg);
   }
   .object-right {
     top: 40px;
     right: 20px;
     position: fixed;
-    width: 12vw;
+    width: 20vw;
+	transform: translateX(60px) translateY(-120px) rotate(45deg);
   }
 }
